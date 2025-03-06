@@ -3,7 +3,7 @@
 
 @plugin "daisyui/theme" {
   name: "winnie";
-  default: false;
+  default: true;
   prefersdark: false;
   color-scheme: "light";
   --color-base-100: oklch(91.55% 0.0574 77.26);
@@ -17,7 +17,7 @@
   --color-accent: #399373;
   --color-accent-content: oklch(38% 0.063 188.416);
   --color-neutral: oklch(28% 0.066 53.813);
-  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-neutral-content: oklch(28% 0.066 53.813);
   --color-info: oklch(70% 0.165 254.624);
   --color-info-content: oklch(29% 0.066 243.157);
   --color-success: oklch(76% 0.177 163.223);

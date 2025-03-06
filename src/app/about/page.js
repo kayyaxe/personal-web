@@ -1,62 +1,97 @@
-import { motion } from "framer-motion"; // Optional animation for smooth transitions
+import {
+  FaReact,
+  FaNode,
+  FaDatabase,
+  FaPython,
+  FaJava,
+  FaJsSquare,
+  FaBootstrap,
+  FaHtml5,
+  FaCss3,
+} from "react-icons/fa";
+import Image from "next/image";
 
 export default function About() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-base-200 text-base-content transition-all duration-500">
       {/* Title */}
       <section className="text-center">
-        <h1 className="text-5xl sm:text-6xl font-bold text-primary animate__animated animate__fadeIn animate__delay-1s">
-          About Me
+        <h1 className="text-5xl sm:text-6xl font-bold text-primary ">
+          Hi I'm Kar <br /> A software engineer.
         </h1>
-        <p className="mt-4 text-lg sm:text-xl text-base-content/80">
-          Hello! I'm Kars, a passionate software engineer. Here's a little about
-          my journey and the technologies I love to work with.
+        <p className="mt-5 text-lg sm:text-xl text-base-content/80">
+          Here's a little about my journey and the technologies I love to work
+          with.
         </p>
       </section>
 
-      {/* Technologies Section */}
       <section className="mt-24 text-center">
-        <h2 className="text-3xl font-semibold text-neutral mb-6">
+        <h2 className="text-3xl font-bold text-accent mb-6">
           Technologies I Use
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Technology Cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {[
             {
-              title: "Next.js",
-              description:
-                "A React framework for building static and dynamic web applications with great developer experience.",
+              icon: <FaPython />,
+              title: "Python",
+              link: "https://www.python.org",
             },
             {
-              title: "React",
-              description:
-                "A powerful JavaScript library for building user interfaces, allowing for reusable components.",
+              icon: <FaJava />,
+              title: "Java",
+              link: "https://www.oracle.com/java/",
             },
             {
-              title: "Tailwind CSS",
-              description:
-                "A utility-first CSS framework for quickly building custom designs without having to leave your HTML.",
-            },
-            {
-              title: "DaisyUI",
-              description:
-                "A plugin for Tailwind CSS that provides a set of customizable components and themes.",
-            },
-            {
-              title: "PostgreSQL",
-              description:
-                "A powerful open-source relational database system used for handling structured data.",
-            },
-            {
+              icon: <FaJsSquare />,
               title: "JavaScript",
-              description:
-                "A versatile programming language used for both frontend and backend development.",
+              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            },
+            {
+              icon: <FaBootstrap />,
+              title: "Spring Boot",
+              link: "https://spring.io/projects/spring-boot",
+            },
+            {
+              icon: <FaHtml5 />,
+              title: "HTML",
+              link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            },
+            {
+              icon: <FaCss3 />,
+              title: "CSS",
+              link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            },
+            { icon: <FaReact />, title: "React", link: "https://reactjs.org" },
+            { icon: <FaNode />, title: "Node.js", link: "https://nodejs.org" },
+            {
+              icon: <FaDatabase />,
+              title: "PostgreSQL",
+              link: "https://www.postgresql.org",
+            },
+            {
+              icon: (
+                <Image
+                  src="/next.svg"
+                  alt="Next.js logo"
+                  width={70}
+                  height={70}
+                />
+              ),
+              title: "Next.js",
+              link: "https://nextjs.org",
             },
           ].map((tech, index) => (
-            <div className="card-body">
-              <h3 className="card-title">{tech.title}</h3>
-              <p>{tech.description}</p>
-            </div>
+            <a
+              key={index}
+              href={tech.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="card-body hover:text-accent hover:scale-105 transition-all">
+                <div className="text-6xl">{tech.icon}</div>
+                <h3 className="card-title mt-4">{tech.title}</h3>
+              </div>
+            </a>
           ))}
         </div>
       </section>

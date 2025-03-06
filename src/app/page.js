@@ -1,4 +1,5 @@
 import Link from "next/link"; // Make sure to import Link for navigation
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -8,20 +9,25 @@ export default function Home() {
     >
       <section className="text-center mt-32">
         <h1 className="text-5xl sm:text-6xl font-bold text-primary animate__animated animate__fadeIn animate__delay-1s">
-          Welcome to My Creative Space 🌟
+          Welcome to Kar's Creative Space 🌟
         </h1>
+
         <p className="mt-4 text-lg sm:text-xl text-base-content/80">
           Explore projects, discover insights, and dive into the world of
           creativity!
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn btn-primary w-full sm:w-auto hover:scale-105 transition-transform shadow-lg rounded-full">
-            Get Started 🚀
-          </button>
-          <button className="btn btn-secondary w-full sm:w-auto hover:scale-105 transition-transform shadow-lg rounded-full">
-            Learn More 📚
-          </button>
+          <Link href="/about">
+            <button className="btn btn-primary w-full sm:w-auto hover:scale-105 transition-transform shadow-lg rounded-full">
+              More about me 🚀
+            </button>
+          </Link>
+          <Link href="/target-page">
+            <button className="btn btn-warning w-full sm:w-auto hover:scale-105 transition-transform shadow-lg rounded-full">
+              Learn More 📚
+            </button>
+          </Link>
         </div>
       </section>
 

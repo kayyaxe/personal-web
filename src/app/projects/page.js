@@ -7,14 +7,20 @@ export default function Projects() {
       <p className="mt-4 text-lg">Check out my exciting projects below:</p>
 
       <section className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* BitSniffer Project */}
         <div className="card w-80 bg-base-100 shadow-xl">
           <figure>
-            <img src="/project1.jpg" alt="Project 1" className="rounded-t-xl" />
+            <img
+              src="bitsniffer.png"
+              alt="Bit Sniffer"
+              className="rounded-t-xl"
+            />
           </figure>
           <div className="card-body">
-            <h3 className="card-title">Project One</h3>
+            <h3 className="card-title">Bit Sniffers</h3>
             <p>
-              A brief description of the project goes here. Fun and creative!
+              BitSniffer is a cryptocurrency tracker built with React and Vite
+              that leverages the CoinGecko API to provide real-time market data.
             </p>
             <div className="card-actions justify-end">
               <Link href="/projects#project1" className="btn btn-accent">
@@ -26,11 +32,14 @@ export default function Projects() {
 
         <div className="card w-80 bg-base-100 shadow-xl">
           <figure>
-            <img src="/project2.jpg" alt="Project 2" className="rounded-t-xl" />
+            <img src="todo.png" alt="To Do App" className="rounded-t-xl" />
           </figure>
           <div className="card-body">
-            <h3 className="card-title">Project Two</h3>
-            <p>Another amazing project. Delve into the details here.</p>
+            <h3 className="card-title">To Do App</h3>
+            <p>
+              A simple full-stack to-do list web application built with React,
+              Spring Boot, and PostgreSQL.
+            </p>
             <div className="card-actions justify-end">
               <Link href="/projects#project2" className="btn btn-accent">
                 Explore

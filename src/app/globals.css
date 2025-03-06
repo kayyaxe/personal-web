@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import "animate.css/animate.min.css";
 
 @plugin "daisyui/theme" {
   name: "winnie";
@@ -10,7 +11,7 @@
   --color-base-200: oklch(96.71% 0.022 80.69);
   --color-base-300: oklch(82.49% 0.1457 72.45);
   --color-base-content: oklch(28% 0.066 53.813);
-  --color-primary: oklch(47% 0.137 46.201);
+  --color-primary: oklch(40% 0.123 38.172);
   --color-primary-content: oklch(98% 0.022 95.277);
   --color-secondary: oklch(59% 0.249 0.584);
   --color-secondary-content: oklch(94% 0.028 342.258);

@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-sm">&copy; 2025 Kar. All rights reserved.</p>
         <div className="mt-4 flex justify-center gap-6">
           <a
-            href="https://www.linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/karxuan/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -17,7 +17,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/kayyaxe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +26,7 @@ const Footer = () => {
               className="hover:text-primary transition-colors"
             />
           </a>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:chenkarxuan@gmail.com">
             <FaEnvelope
               size={30}
               className="hover:text-primary transition-colors"

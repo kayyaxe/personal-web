@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="w-full absolute top-0 left-0 p-4 flex justify-center items-center bg-opacity-60 backdrop-blur-lg">
-      <nav className="flex gap-8 text-2xl font-bold rounded-full p-3 shadow-lg space-x-6">
+      <nav className="flex gap-8 text-xl font-bold rounded-full p-3 shadow-lg space-x-6 justify-center items-center">
         <Link
           href="/"
           className="text-primary hover:text-warning transition-all duration-300 rounded-full p-2 hover:bg-neutral/70"

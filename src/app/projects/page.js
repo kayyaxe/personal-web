@@ -6,8 +6,8 @@ export default function ProjectPage() {
   return (
     <main className="p-8 sm:p-20 bg-base-200 text-base-content">
       {/* Page Title */}
-      <h1 className="text-5xl font-bold text-primary flex justify-left items-center gap-2">
-        My Projects <span>🌈</span>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary flex justify-left items-center gap-2 whitespace-nowrap">
+        My Projects 🎨
       </h1>
 
       {/* GitHub Section */}

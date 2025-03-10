@@ -16,7 +16,7 @@ export default function About() {
     <main className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-base-200 text-base-content transition-all duration-500">
       {/* Title */}
       <section className="text-center">
-        <h1 className="text-5xl sm:text-6xl font-bold text-primary ">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold text-primary ">
           Hi I'm Kar <br /> A software engineer.
         </h1>
         <p className="mt-5 text-lg sm:text-xl text-base-content/80">
@@ -29,7 +29,7 @@ export default function About() {
         <h2 className="text-3xl font-bold text-accent mb-6">
           Technologies I Use
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
           {[
             {
               icon: <FaPython />,
@@ -98,7 +98,7 @@ export default function About() {
 
       {/* Contact Section */}
       <section className="mt-24 text-center">
-        <h2 className="text-3xl font-semibold text-neutral mb-6">
+        <h2 className="text-3xl font-semibold text-neutral mb-6 whitespace-nowrap">
           Let's Connect!
         </h2>
         <p className="text-lg sm:text-xl text-base-content/80">

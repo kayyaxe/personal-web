@@ -1,0 +1,1 @@
+{"image":[{"kind":"video","width":728,"height":728,"duration":0.04,"codec":"mjpeg","frameRate":25,"index":0,"viewable":true}],"decoder":{"imageDecoder":{"preferAnimation":true}},"defaultSelection":{"kind":"image","duration":0.04,"image":_.image[0]}}

@@ -1,125 +1,99 @@
-import {
-  FaReact,
-  FaNode,
-  FaDatabase,
-  FaPython,
-  FaJava,
-  FaJsSquare,
-  FaBootstrap,
-  FaHtml5,
-  FaCss3,
-} from "react-icons/fa";
-import Image from "next/image";
+"use client";
 
-export default function About() {
+import { useState, useRef } from "react";
+import { FaPlay, FaPause, FaQuestionCircle } from "react-icons/fa";
+import Hobbies from "../../components/Hobbies";
+
+export default function HobbiesPlaylist() {
+  const [playing, setPlaying] = useState(null);
+  const [expanded, setExpanded] = useState(null);
+  const audioRefs = useRef([]);
+
+  const togglePlay = (index, song) => {
+    const currentAudio = audioRefs.current[index];
+
+    if (playing === index) {
+      currentAudio.pause();
+      setPlaying(null);
+    } else {
+      if (playing !== null && audioRefs.current[playing]) {
+        audioRefs.current[playing].pause();
+      }
+      currentAudio.play();
+      setPlaying(index);
+    }
+  };
+
+  const toggleExpand = (index) => {
+    setExpanded(expanded === index ? null : index);
+  };
+
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-8 sm:p-20 bg-base-200 text-base-content transition-all duration-500">
-      {/* Title */}
+    <main className="flex flex-col items-center justify-center w-full sm:p-5 md:p-20 bg-base-200 text-base-content transition-all duration-500">
       <section className="text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold text-primary ">
-          Hi I'm Kar <br /> A software engineer.
+        <h1 className="font-[Playfair Display] text-4xl sm:text-5xl md:text-6xl font-bold text-primary">
+          Hi I'm Kar!
         </h1>
-        <p className="mt-5 text-lg sm:text-xl text-base-content/80">
-          Here's a little about my journey and the technologies I love to work
-          with.
+        <p className="font-[Quicksand] mt-5 text-lg sm:text-xl text-base-content/80">
+          Here's a little about my journey and the things I love to do.
         </p>
       </section>
 
-      <section className="mt-24 text-center">
-        <h2 className="text-3xl font-bold text-accent mb-6">
-          Technologies I Use
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
-          {[
-            {
-              icon: <FaPython />,
-              title: "Python",
-              link: "https://www.python.org",
-            },
-            {
-              icon: <FaJava />,
-              title: "Java",
-              link: "https://www.oracle.com/java/",
-            },
-            {
-              icon: <FaJsSquare />,
-              title: "JavaScript",
-              link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            },
-            {
-              icon: <FaBootstrap />,
-              title: "Spring Boot",
-              link: "https://spring.io/projects/spring-boot",
-            },
-            {
-              icon: <FaHtml5 />,
-              title: "HTML",
-              link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-            },
-            {
-              icon: <FaCss3 />,
-              title: "CSS",
-              link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-            },
-            { icon: <FaReact />, title: "React", link: "https://reactjs.org" },
-            { icon: <FaNode />, title: "Node.js", link: "https://nodejs.org" },
-            {
-              icon: <FaDatabase />,
-              title: "PostgreSQL",
-              link: "https://www.postgresql.org",
-            },
-            {
-              icon: (
-                <Image
-                  src="/next.svg"
-                  alt="Next.js logo"
-                  width={70}
-                  height={70}
-                />
-              ),
-              title: "Next.js",
-              link: "https://nextjs.org",
-            },
-          ].map((tech, index) => (
-            <a
+      <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl px-4 sm:px-6">
+        <div className="list bg-base-100 rounded-box shadow-md max-h-100 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-base-300">
+          <p className="p-4 pb-2 text-lg opacity-80 w-full tracking-wider font-extrabold text-primary uppercase text-center">
+            <span className="text-2xl sm:text-4xl">🎶</span> Hobbies Playlist
+          </p>
+          {Hobbies.map((hobby, index) => (
+            <div
               key={index}
-              href={tech.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              className="flex items-center gap-2 sm:gap-2 md:gap-4 p-4 border-b border-base-200 last:border-0 hover:bg-base-200 transition-all rounded-lg"
             >
-              <div className="card-body hover:text-accent hover:scale-105 transition-all">
-                <div className="text-6xl">{tech.icon}</div>
-                <h3 className="card-title mt-4">{tech.title}</h3>
+              <div>
+                <img
+                  className="w-16 h-16 sm:w-12 sm:h-12 rounded-full shadow-md"
+                  src={hobby.img}
+                  alt={hobby.title}
+                />
               </div>
-            </a>
-          ))}
-        </div>
-      </section>
+              <div className="flex-1">
+                <div className="font-mono text-sm sm:text-base md:text-lg">
+                  {hobby.title}
+                </div>
+                <div className="font-mono text-xs sm:text-sm md:text-base">
+                  {hobby.desc}
+                </div>
 
-      {/* Contact Section */}
-      <section className="mt-24 text-center">
-        <h2 className="text-3xl font-semibold text-neutral mb-6 whitespace-nowrap">
-          Let's Connect!
-        </h2>
-        <p className="text-lg sm:text-xl text-base-content/80">
-          Feel free to reach out if you'd like to collaborate or discuss
-          tech-related topics!
-        </p>
-        <div className="mt-6 flex gap-4 justify-center">
-          <a
-            href="mailto:your-email@example.com"
-            className="btn btn-primary hover:scale-105 transition-transform shadow-lg"
-          >
-            Contact Me
-          </a>
-          <a
-            href="https://github.com/yourgithub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary hover:scale-105 transition-transform shadow-lg"
-          >
-            GitHub
-          </a>
+                {expanded === index && (
+                  <div className="opacity-60 text-xs sm:text-sm">
+                    {hobby.details}
+                  </div>
+                )}
+              </div>
+
+              <button
+                onClick={() => togglePlay(index, hobby.song)}
+                className="p-2 rounded-full hover:bg-primary/20 transition-all"
+              >
+                {playing === index ? (
+                  <FaPause className="text-xl sm:text-lg" />
+                ) : (
+                  <FaPlay className="text-xl sm:text-lg" />
+                )}
+              </button>
+              <audio
+                ref={(el) => (audioRefs.current[index] = el)}
+                src={hobby.song}
+              />
+
+              <button
+                onClick={() => toggleExpand(index)}
+                className="p-2 rounded-full hover:bg-primary/20 transition-all"
+              >
+                <FaQuestionCircle className="text-xl sm:text-lg" />
+              </button>
+            </div>
+          ))}
         </div>
       </section>
     </main>

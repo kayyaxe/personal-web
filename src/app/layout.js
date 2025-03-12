@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <Menu /> {/* Include Menu component */}
         {/* Main content */}
-        <main className="flex flex-col items-center justify-center min-h-screen pt-16 p-8 sm:p-20 bg-base-200 text-base-content transition-all duration-500">
+        <main className="flex flex-col items-center justify-center min-h-screen pt-16 p-1 sm:p-20 bg-base-200 text-base-content transition-all duration-500">
           {children}
         </main>
         <Footer />

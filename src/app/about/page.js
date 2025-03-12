@@ -29,7 +29,7 @@ export default function HobbiesPlaylist() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center w-full sm:p-5 md:p-20 bg-base-200 text-base-content transition-all duration-500">
+    <main className="flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
       <section className="text-center">
         <h1 className="font-[Playfair Display] text-4xl sm:text-5xl md:text-6xl font-bold text-primary">
           Hi I'm Kar!
@@ -47,11 +47,11 @@ export default function HobbiesPlaylist() {
           {Hobbies.map((hobby, index) => (
             <div
               key={index}
-              className="flex items-center gap-2 sm:gap-2 md:gap-4 p-4 border-b border-base-200 last:border-0 hover:bg-base-200 transition-all rounded-lg"
+              className="flex items-center gap-2 sm:gap-1 md:gap-4 p-4 border-b border-base-200 last:border-0 hover:bg-base-200 transition-all rounded-lg"
             >
               <div>
                 <img
-                  className="w-16 h-16 sm:w-12 sm:h-12 rounded-full shadow-md"
+                  className="w-16 h-16  sm:w-10 sm:h-10 rounded-full shadow-md"
                   src={hobby.img}
                   alt={hobby.title}
                 />
@@ -65,9 +65,7 @@ export default function HobbiesPlaylist() {
                 </div>
 
                 {expanded === index && (
-                  <div className="opacity-60 text-xs sm:text-sm">
-                    {hobby.details}
-                  </div>
+                  <div className="opacity-60 sm:text-sm">{hobby.details}</div>
                 )}
               </div>
 
@@ -76,9 +74,9 @@ export default function HobbiesPlaylist() {
                 className="p-2 rounded-full hover:bg-primary/20 transition-all"
               >
                 {playing === index ? (
-                  <FaPause className="text-xl sm:text-lg" />
+                  <FaPause className="text-sm md:text-base lg:text-lg" />
                 ) : (
-                  <FaPlay className="text-xl sm:text-lg" />
+                  <FaPlay className="text-sm md:text-base lg:text-lg" />
                 )}
               </button>
               <audio
@@ -90,7 +88,7 @@ export default function HobbiesPlaylist() {
                 onClick={() => toggleExpand(index)}
                 className="p-2 rounded-full hover:bg-primary/20 transition-all"
               >
-                <FaQuestionCircle className="text-xl sm:text-lg" />
+                <FaQuestionCircle className="text-sm md:text-base lg:text-lg" />
               </button>
             </div>
           ))}

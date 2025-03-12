@@ -16,18 +16,18 @@ export default function Home() {
           <img
             src="karicon.png"
             alt="Profile"
-            className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover "
+            className="w-35 h-35 md:w-45 md:h-45 lg:w-55 lg:h-55 rounded-full object-cover "
           />
         </div>
 
         <div className="text-container flex flex-col items-center lg:items-start mt-6 lg:mt-0 max-w-full">
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary mb-4"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary mb-4 whitespace-nowrap"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Hi, I'm Kar 🌟
+            Hi, I'm Kar🌟
           </motion.h1>
 
           <motion.p

@@ -1,1 +1,0 @@
-{"audio":[{"kind":"audio","start":0.023021,"duration":257.83,"channels":"stereo","codec":"mp3","index":0,"sampleRate":48000,"viewable":true}],"decoder":{"ffmpeg":["mp3"]},"defaultSelection":{"kind":"audio","duration":257.83,"audio":_.audio[0]}}

@@ -17,22 +17,24 @@ export default function ProjectPage() {
   return (
     <main className="p-8 sm:p-20 bg-base-200 text-base-content">
       {/* Page Title */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary flex justify-left items-center gap-2 whitespace-nowrap">
+      <h1
+        style={{ fontFamily: "coffee, sans-serif" }}
+        className="text-4xl sm:text-5xl md:text-6xl  text-primary flex justify-left items-center gap-2 whitespace-nowrap"
+      >
         My Projects 🎨
       </h1>
 
       {/* GitHub Section */}
-      <p className="mt-4 text-lg text-left">
+      <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium  text-left">
         I'm always working on new projects! For more information, check out my{" "}
         <Link
           href="https://github.com/yourgithub" // Replace with your GitHub link
           target="_blank"
-          className="text-neutral text-lg  font-semibold  group transition-all duration-300"
+          className="text-primary sm:text-lg md:text-xl lg:text-2xl font-semibold text-left group transition-all duration-300"
         >
           <span className="group-hover:underline">GitHub</span>
         </Link>
       </p>
-
       {/* Projects Grid */}
       <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (
@@ -45,7 +47,6 @@ export default function ProjectPage() {
           />
         ))}
       </section>
-
       {/* Technologies Section */}
       <section className="mt-24 text-center">
         <h2 className="text-3xl font-bold text-info-content mb-6 flex justify-left">
@@ -102,8 +103,8 @@ export default function ProjectPage() {
                 <Image
                   src="/next.svg"
                   alt="Next.js logo"
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                 />
               ),
               title: "Next.js",

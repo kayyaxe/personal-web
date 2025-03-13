@@ -1,6 +1,35 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @import "animate.css/animate.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&family=Dancing+Script:wght@400;700&family=Lobster&family=Montserrat:wght@400;600;700&family=Comfortaa:wght@400;700&family=Fredoka+One&display=swap");
+@font-face {
+  font-family: "coffee";
+  src: url("/fonts/BrewedCoffee.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baloo";
+  src: url("/fonts/Baloo.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "baloo", "ans-serif";
+}
+h1 {
+  font-family: "coffee", "sans-serif";
+}
+
+@font-face {
+  font-family: "fatmono", " sans-serif";
+  src: url("/fonts/FatMono.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap");
 
 @plugin "daisyui/theme" {
   name: "winnie";

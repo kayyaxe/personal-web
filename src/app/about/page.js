@@ -29,20 +29,29 @@ export default function HobbiesPlaylist() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
+    <main className="p-8 sm:p-20  flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
       <section className="text-center">
-        <h1 className="font-[Playfair Display] text-4xl sm:text-5xl md:text-6xl font-bold text-primary">
-          Hi I'm Kar!
+        <h1 className="text-4xl sm:text-5xl md:text-6xl  text-primary flex justify-left items-center gap-2 whitespace-nowrap">
+          From Labs to Loops
         </h1>
-        <p className="font-[Quicksand] mt-5 text-lg sm:text-xl text-base-content/80">
-          Here's a little about my journey and the things I love to do.
+        <p className=" mt-5 text-lg sm:text-xl text-base-content/80">
+          With a Chemical Engineering background from NTU, I’m now transitioning
+          into software engineering. My passion for problem-solving has led me
+          to explore the world of code, and I’m excited to build innovative
+          solutions through programming
         </p>
       </section>
 
-      <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl px-4 sm:px-6">
+      <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl ">
         <div className="list bg-base-100 rounded-box shadow-md max-h-100 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-base-300">
           <p className="p-4 pb-2 text-lg opacity-80 w-full tracking-wider font-extrabold text-primary uppercase text-center">
-            <span className="text-2xl sm:text-4xl">🎶</span> Hobbies Playlist
+            <span className="text-2xl sm:text-4xl">🎶</span>{" "}
+            <span
+              style={{ fontFamily: '"Fatmono", sans-serif' }}
+              className="font-extrabold text-2xl sm:text-3xl"
+            >
+              Hobbies Playlist
+            </span>
           </p>
           {Hobbies.map((hobby, index) => (
             <div

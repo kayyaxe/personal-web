@@ -2,50 +2,50 @@ const hobbies = [
   {
     img: "/hobby-pics/vb.jpeg",
     title: "Volleyball",
-    desc: "The adrenaline makes me feel alive!",
+    desc: "🏐 Fast, fun, and full of energy!",
     details:
-      "I love playing volleyball for the teamwork and energy it brings. It’s a great way to challenge myself and bond with others in a relaxed, fun way.",
+      "Playing volleyball is my way to stay active while having a blast with friends. The teamwork and intensity make it a great way to challenge myself.",
     song: "/music/haikyu.mp3",
   },
   {
     img: "/hobby-pics/board.jpeg",
     title: "Board Games",
-    desc: "Perfect for a chill night with friends.",
+    desc: "🎲Perfect  for a chill night!",
     details:
-      "I love strategizing and problem-solving in board games. It’s always a fun challenge to figure out the best moves.",
+      "Board games bring out my competitive side. Whether it’s strategizing or just having fun, they’re always a good time with friends.",
     song: "/music/pink-panther.mp3",
   },
 
   {
     img: "/hobby-pics/camp.jpg",
     title: "Outdoor Adventures",
-    desc: "Nature is the best reset button.",
+    desc: "🌲 Nature resets my mind!",
     details:
-      "Hiking and camping allow me to disconnect and recharge. Exploring new trails and enjoying the outdoors helps me clear my mind and appreciate the simple things.",
+      "Hiking and camping are my ways to escape the chaos. Getting outdoors lets me clear my head and appreciate the small things in life.",
     song: "/music/into-the.mp3",
   },
   {
     img: "/hobby-pics/tutor.jpg",
     title: "Tutoring",
-    desc: "Helping others learn brings me joy.",
+    desc: "📚 Helping others succeed!",
     details:
-      "Teaching study skills and helping others build confidence in their learning. It’s so rewarding to see someone succeed and gain a deeper understanding.",
+      "I love tutoring because it’s rewarding to see someone grasp a concept they struggled with. It’s a great feeling knowing I helped someone grow.",
     song: "/music/interstellar.mp3",
   },
   {
     img: "/hobby-pics/journal.jpg",
     title: "Journaling",
-    desc: "A personal space to reflect and create.",
+    desc: "📖 A creative space for me!",
     details:
-      "A junk journal or digital scrapbook is where I  document memories, ideas, and random thoughts. It's my creative outlet for self-expression and reflection.",
+      "Journaling is where I reflect, vent, and get creative. Whether it’s through a digital scrapbook or a traditional journal, it’s my way of organizing thoughts.",
     song: "/music/photograph.mp3",
   },
   {
     img: "/hobby-pics/goku.jpg",
     title: "Anime",
-    desc: "Escaping into new worlds and stories.",
+    desc: "🎥 Escaping into new worlds!",
     details:
-      "The best chance to dive into different worlds and experience exciting adventures.",
+      "Anime is my go-to for when I need to unwind. From exciting adventures to deep storytelling, it’s an awesome way to get lost in a different world.",
     song: "/music/departure.mp3",
   },
 ];

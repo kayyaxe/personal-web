@@ -29,20 +29,20 @@ export default function HobbiesPlaylist() {
   };
 
   return (
-    <main className="p-8 sm:p-20  flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
-      <section className="text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl  text-primary flex justify-left items-center gap-2 whitespace-nowrap">
+    <main className="p-8 sm:p-20 flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
+      <section className="text-left w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl text-primary flex justify-start items-center gap-2 whitespace-nowrap">
           From Labs to Loops
         </h1>
-        <p className=" mt-5 text-lg sm:text-xl text-base-content/80">
+        <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium  text-left">
           With a Chemical Engineering background from NTU, I’m now transitioning
           into software engineering. My passion for problem-solving has led me
           to explore the world of code, and I’m excited to build innovative
-          solutions through programming
+          solutions through programming.
         </p>
       </section>
 
-      <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl ">
+      <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl">
         <div className="list bg-base-100 rounded-box shadow-md max-h-100 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-base-300">
           <p className="p-4 pb-2 text-lg opacity-80 w-full tracking-wider font-extrabold text-primary uppercase text-center">
             <span className="text-2xl sm:text-4xl">🎶</span>{" "}

@@ -43,7 +43,7 @@ export default function HobbiesPlaylist() {
   return (
     <main className="p-8 sm:p-20 flex flex-col items-center justify-center w-full md:p-20 bg-base-200 text-base-content transition-all duration-500">
       <section className="text-left w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl text-primary flex justify-start items-center gap-2 whitespace-nowrap">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl text-primary flex justify-start items-center gap-2 ">
           From Labs to Loops
         </h1>
         <p className="mt-5 text-lg sm:text-xl text-base-content/80">
@@ -73,12 +73,12 @@ export default function HobbiesPlaylist() {
               Hobbies Playlist
             </span>
           </p>
-          <p className="text-sm sm:text-base flex justify-between items-center px-4 py-2 text-base-content/80 bg-base-300 rounded-lg mb-3">
+          <p className="text-xs font-mono sm:text-base flex justify-between items-center px-4 py-2 text-base-content/80 bg-base-300 rounded-lg mb-3">
             <span className="flex items-center gap-2">
               <FaUser className="text-primary" />
               <span className="font-bold">Kar</span>
             </span>
-            <span className="opacity-70">Total: 18m 36s </span>
+            <span className="sm:text-base opacity-80">Total: 18m 36s </span>
             <button
               onClick={shuffleHobbies}
               className="flex items-center gap-1 p-2 rounded-md bg-primary text-base-100 hover:bg-primary-focus transition-all"

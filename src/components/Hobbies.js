@@ -42,12 +42,12 @@ const hobbies = [
     song: "/music/departure.mp3",
   },
   {
-    img: "/hobby-pics/traveljpg",
+    img: "/hobby-pics/travel.jpg",
     title: "Travelling",
-    desc: "🎥 Escaping into new worlds!",
+    desc: "✈️ Exploring new places!",
     details:
-      "Anime is my go-to for when I need to unwind. From exciting adventures to deep storytelling, it’s an awesome way to get lost in a different world.",
-    song: "/music/departure.mp3",
+      "Travelling opens my eyes to different cultures, foods, and experiences. Whether it's a road trip or an overseas adventure, I love discovering new destinations.",
+    song: "/music/jetlag.mp3",
   },
   {
     img: "/hobby-pics/tutor.jpg",

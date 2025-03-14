@@ -9,6 +9,12 @@
   font-style: normal;
 }
 
+html,
+body {
+  margin: 0;
+  background-color: var(--color-base-200);
+}
+
 @font-face {
   font-family: "baloo";
   src: url("/fonts/Baloo.ttf") format("opentype");

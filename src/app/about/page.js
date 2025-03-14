@@ -43,8 +43,16 @@ export default function HobbiesPlaylist() {
       </section>
 
       <section className="mt-12 w-full max-w-full sm:max-w-xs md:max-w-xl lg:max-w-3xl ">
-        <div className="list bg-base-100 rounded-box shadow-md max-h-100 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-base-300">
-          <p className="p-4 pb-2 text-lg opacity-80 w-full tracking-wider font-extrabold text-primary uppercase text-center">
+        <div className="list bg-base-100 rounded-box shadow-md max-h-150 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-base-300">
+          <div className="flex justify-center lg:justify-center lg:flex-shrink-0">
+            <img
+              src="collage.jpg"
+              alt="collage"
+              className="py-4 w-40 h-40 md:w-70 md:h-70 lg:w-90 lg:h-90 max-w-full h-auto  "
+            />
+          </div>
+
+          <p className=" pb-2 text-lg opacity-80 w-full tracking-wider font-extrabold text-primary uppercase text-center">
             <span className="text-2xl sm:text-4xl">🎶</span>{" "}
             <span
               style={{ fontFamily: '"Fatmono", sans-serif' }}
